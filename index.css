@@ -20,7 +20,7 @@ body {
 	min-width: var(--size-19);
 }
 
-body>div {
+body>div[name="main"] {
 	flex: 1 0 0;
 	overflow-x: hidden;
 	overflow-y: auto;
