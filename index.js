@@ -5,6 +5,7 @@ import "./components/sponsors.js";
 import "./components/join.js";
 
 window.addEventListener(`load`, () => {
+	// Shorthand for selecting a menu item.
 	const selectMenuItem = (name) => {
 		document.querySelectorAll(`body>div>*`).forEach((element) => {
 			element.classList.add(`no-display`);

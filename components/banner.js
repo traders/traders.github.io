@@ -1,4 +1,3 @@
-import "./banner.js";
 import { importWebElement } from "../js/fetch.js";
 
-importWebElement(`about`);
+importWebElement(`banner`);

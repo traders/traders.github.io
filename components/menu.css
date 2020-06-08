@@ -15,10 +15,3 @@
 	height: var(--size-3);
 	margin: auto auto auto var(--size--4);
 }
-
-@media screen and (max-width: 400px) {
-	:host>div>img {
-		width: 0 !important;
-		margin: auto auto 0 0;
-	}
-}

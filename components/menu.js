@@ -5,10 +5,7 @@ export function importWebElement() {
 	return fetch.importWebElement(`menu`, class extends HTMLElement {
 		constructor() {
 			super();
-			setTimeout(() => {
-				// Select about by default.
-				this.updateSelection(`about`);
-	
+			setTimeout(() => {	
 				// Create click handlers for all menu items.	
 				this.shadowRoot.querySelectorAll(`traders-menu-item`)
 					.forEach((element) => {
