@@ -49,6 +49,26 @@
 	margin: auto auto var(--size-2);
 }
 
+:host div[name="board"] {
+	display: flex;
+	flex-flow: column;
+
+	text-align: center;
+}
+
+:host div[name="board"]>div {
+	display: flex;
+	flex-flow: row;
+
+	justify-content: center;
+}
+
+:host div[name="board"]>div.general {
+	flex-wrap: wrap;
+	margin: auto;
+	max-width: var(--size-23);
+}
+
 :host div[name="contact"] {
 	text-align: center;
 }

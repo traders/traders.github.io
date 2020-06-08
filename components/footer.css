@@ -2,4 +2,6 @@
 
 :host>p {
 	margin: var(--size--2);
+
+	text-align: center;
 }
