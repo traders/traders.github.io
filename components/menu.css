@@ -4,10 +4,11 @@
 	display: flex;
 	flex-flow: row;
 	width: 100%;
-	height: var(--size-5);
+	height: var(--size-6);
 
 	color: white;
 	background-color: var(--neutral-dark-3);
+	font-size: var(--size-1);
 }
 
 :host>div>img {

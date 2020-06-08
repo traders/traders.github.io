@@ -1,14 +1,48 @@
 <template>
 	<link rel="stylesheet" href="./components/about.css">
 	<div>
-		<traders-banner class="about">
+		<traders-banner name="about" image="./assets/group-grass.jpg" gradient>
 			<div slot="content">
 				<img src="./assets/logo-words-dark.png" />
-				<h2>At MIT’s premier undergraduate quantitative finance club,</h2>
+				<h3>At MIT’s premier undergraduate quantitative finance club,</h3>
 				<p>
-					We partner with leading industry sponsors annually to host the largest intercollegiate trading competition. In addition, we organize seminars on topics anywhere from game theory to market making, promoting interest in trading to the MIT community.
+					We partner with leading industry sponsors annually to host the <em>largest intercollegiate trading competition</em>. In addition, we organize seminars on topics anywhere from game theory to market making, promoting interest in trading to the MIT community.
 				</p>
 			</div>
 		</traders-banner>
+		<traders-banner name="compete" image="./assets/competition-social-wide.jpg" blur>
+			<div slot="content">
+				<h2>Compete</h2>
+				<div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<button>Learn More</button>
+				</div>
+			</div>
+		</traders-banner>
+		<traders-banner name="sponsor" image="./assets/sponsor-social-wide.jpg" blur>
+			<div slot="content">
+				<h2>Sponsor</h2>
+				<div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<button>Learn More</button>
+				</div>
+			</div>
+		</traders-banner>
+		<traders-banner name="join" image="./assets/group-stairs-wide.jpg" blur>
+			<div slot="content">
+				<h2>Join</h2>
+				<div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<button>Learn More</button>
+				</div>
+			</div>
+		</traders-banner>
+		<div name="contact">
+			<div>
+				<h2>Have questions?</h2>
+				<p>Contact us at <a href="mailto:traders-exec@mit.edu">traders-exec@mit.edu</a>.</p>
+			</div>
+		</div>
+		<traders-footer></traders-footer>
 	</div>
 </template>
