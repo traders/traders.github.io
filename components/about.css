@@ -12,7 +12,7 @@
 }
 
 :host traders-banner.about>div>h2 {
-	margin: var(--size-0) auto var(--size-0);
+	margin: var(--size-0) auto var(--size--4);
 	max-width: 80%;
 	text-align: center;
 

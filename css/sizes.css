@@ -23,4 +23,14 @@
 	--size-8: calc(var(--size-7) * var(--size-exponential));
 	--size-9: calc(var(--size-8) * var(--size-exponential));
 	--size-10: calc(var(--size-9) * var(--size-exponential));
+	--size-11: calc(var(--size-10) * var(--size-exponential));
+	--size-12: calc(var(--size-11) * var(--size-exponential));
+	--size-13: calc(var(--size-12) * var(--size-exponential));
+	--size-14: calc(var(--size-13) * var(--size-exponential));
+	--size-15: calc(var(--size-14) * var(--size-exponential));
+	--size-16: calc(var(--size-15) * var(--size-exponential));
+	--size-17: calc(var(--size-16) * var(--size-exponential));
+	--size-18: calc(var(--size-17) * var(--size-exponential));
+	--size-19: calc(var(--size-18) * var(--size-exponential));
+	--size-20: calc(var(--size-19) * var(--size-exponential));
 }
