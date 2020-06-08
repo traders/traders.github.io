@@ -1,0 +1,26 @@
+:root,
+:host {
+	--size-exponential: 1.2;
+
+	--size--10: calc(var(--size--9) / var(--size-exponential));
+	--size--9: calc(var(--size--8) / var(--size-exponential));
+	--size--8: calc(var(--size--7) / var(--size-exponential));
+	--size--7: calc(var(--size--6) / var(--size-exponential));
+	--size--6: calc(var(--size--5) / var(--size-exponential));
+	--size--5: calc(var(--size--4) / var(--size-exponential));
+	--size--4: calc(var(--size--3) / var(--size-exponential));
+	--size--3: calc(var(--size--2) / var(--size-exponential));
+	--size--2: calc(var(--size--1) / var(--size-exponential));
+	--size--1: calc(var(--size-0) / var(--size-exponential));
+	--size-0: 1em;
+	--size-1: calc(var(--size-0) * var(--size-exponential));
+	--size-2: calc(var(--size-1) * var(--size-exponential));
+	--size-3: calc(var(--size-2) * var(--size-exponential));
+	--size-4: calc(var(--size-3) * var(--size-exponential));
+	--size-5: calc(var(--size-4) * var(--size-exponential));
+	--size-6: calc(var(--size-5) * var(--size-exponential));
+	--size-7: calc(var(--size-6) * var(--size-exponential));
+	--size-8: calc(var(--size-7) * var(--size-exponential));
+	--size-9: calc(var(--size-8) * var(--size-exponential));
+	--size-10: calc(var(--size-9) * var(--size-exponential));
+}

@@ -1,9 +1,19 @@
-import { fetch } from "./api/fetch.js";
+import "./components/menu.js";
 
-fetch({
-	url: `./components/menu.html`,
-	responseType: `document`
-}).then((xhr) => {
-	document.body.appendChild(xhr.responseXML.querySelector(`template`).content.cloneNode(true));
-	document.body.appendChild(xhr.responseXML.querySelector(`template`).content.cloneNode(true));
+window.addEventListener(`load`, () => {
+	window.addEventListener(`traders-menu-about`, () => {
+		console.log(`about`);
+	});
+	
+	window.addEventListener(`traders-menu-competition`, () => {
+		console.log(`competition`);
+	});
+	
+	window.addEventListener(`traders-menu-sponsors`, () => {
+		console.log(`sponsors`);
+	});
+	
+	window.addEventListener(`traders-menu-join`, () => {
+		console.log(`join`);
+	});
 });

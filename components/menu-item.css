@@ -1,0 +1,35 @@
+@import "../css/bundle.css";
+
+:host>div {
+	display: flex;
+	flex-flow: column;
+	height: 100%;
+
+	cursor: pointer;
+}
+
+:host(.selected)>div {
+	cursor: initial;
+}
+
+:host>div>span {
+	flex: 0 0 auto;
+	margin: auto var(--size--4);
+
+	font-family: var(--font-title);
+	transition: color var(--time--3);
+}
+
+:host(.selected)>div>span,
+:host(:hover)>div>span {
+	color: var(--accent-light-1);
+}
+
+:host>div>div {
+	flex: 0 0 var(--size--10);
+	width: 100%;
+}
+
+:host(.selected)>div>div {
+	background-color: var(--accent-light-1);
+}

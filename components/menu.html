@@ -1,16 +1,18 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-	<meta charset="UTF-8">
-</head>
-
-<body>
-	<template>
-		<div>
-			menu
-		</div>
-	</template>
-</body>
-
-</html>
+<template>
+	<link rel="stylesheet" href="./components/menu.css">
+	<div>
+		<img src="./assets/logo-words-dark.png">
+		<traders-menu-item name="about">
+			<span slot="menu-item-text">About</span>
+		</traders-menu-item>
+		<traders-menu-item name="competition">
+			<span slot="menu-item-text">Competition</span>
+		</traders-menu-item>
+		<traders-menu-item name="sponsors">
+			<span slot="menu-item-text">Sponsors</span>
+		</traders-menu-item>
+		<traders-menu-item name="join">
+			<span slot="menu-item-text">Join</span>
+		</traders-menu-item>
+	</div>
+</template>

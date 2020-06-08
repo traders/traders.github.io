@@ -1,0 +1,16 @@
+:root,
+:host {
+	--time-exponential: 1.2;
+
+	--time--5: calc(var(--time--4) / var(--time-exponential));
+	--time--4: calc(var(--time--3) / var(--time-exponential));
+	--time--3: calc(var(--time--2) / var(--time-exponential));
+	--time--2: calc(var(--time--1) / var(--time-exponential));
+	--time--1: calc(var(--time-0) / var(--time-exponential));
+	--time-0: 1s;
+	--time-1: calc(var(--time-0) * var(--time-exponential));
+	--time-2: calc(var(--time-1) * var(--time-exponential));
+	--time-3: calc(var(--time-2) * var(--time-exponential));
+	--time-4: calc(var(--time-3) * var(--time-exponential));
+	--time-5: calc(var(--time-4) * var(--time-exponential));
+}
