@@ -7,7 +7,7 @@
 	height: var(--size-5);
 
 	color: white;
-	background-color: black;
+	background-color: var(--neutral-dark-3);
 }
 
 :host>div>img {
