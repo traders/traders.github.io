@@ -1,3 +1,9 @@
+h1 {
+	font-family: var(--font-title);
+	color: var(--accent-light-1);
+	font-size: var(--size-5);
+}
+
 h2 {
 	font-family: var(--font-title);
 	color: var(--accent-light-1);
@@ -29,4 +35,9 @@ button {
 	font-family: var(--font-title);
 	font-size: var(--size-1);
 	cursor: pointer;
+	transition: filter var(--time--3);
+}
+
+button:hover {
+	filter: brightness(130%);
 }

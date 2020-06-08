@@ -3,24 +3,30 @@ import "./components/about.js";
 import "./components/competition.js";
 import "./components/sponsors.js";
 import "./components/join.js";
+import "./components/footer.js";
 
 window.addEventListener(`load`, () => {
 	// Shorthand for selecting a menu item.
 	const selectMenuItem = (name) => {
-		document.querySelectorAll(`body>div>*`).forEach((element) => {
+		document.querySelectorAll(`body>div>:not(traders-footer)`).forEach((element) => {
 			element.classList.add(`no-display`);
 		});
 		document.querySelector(`body>div>traders-${name}`)
 			.classList.remove(`no-display`);
 		document.querySelector(`traders-menu`).updateSelection(name);
+		window.location.hash = `#${name}`;
 	};
 
 	window.addEventListener(`traders-menu-update`, (event) => {
 		selectMenuItem(event.detail.name);
 	});
 
-	// Select About by default.
+	// Select About by default, or interpret fragment.
 	Menu.importWebElement().then(() => {
-		selectMenuItem(`about`);
+		if (window.location.hash) {
+			selectMenuItem(window.location.hash.slice(1));
+		} else {
+			selectMenuItem(`about`);
+		}
 	});
 });

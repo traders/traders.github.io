@@ -1,6 +1,36 @@
 <template>
 	<link rel="stylesheet" href="./components/competition.css">
 	<div>
-		competition
+		<traders-banner name="compete" image="./assets/competition-social-wide.jpg" blur>
+			<div slot="content">
+				<img src="./assets/logo-words-dark.png" />
+				<h1>Annual Competition</h1>
+			</div>
+		</traders-banner>
+		<div name="stack">
+			<div name="stats">
+				<div>
+					<span name="number">20,000</span>
+					<span name="units">USD in prizes</span>
+				</div>
+				<div>
+					<span name="number">120</span>
+					<span name="units">teams</span>
+				</div>
+				<div>
+					<span name="number">30</span>
+					<span name="units">schools</span>
+				</div>
+			</div>
+			<h2>Think you have what it takes?</h2>
+			<button name="view">View Sample Case</button>
+			<button name="apply">Apply Now</button>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+				magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+				pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+				laborum.</p>
+			<img src="./assets/competition-1.jpg" />
+		</div>
 	</div>
 </template>

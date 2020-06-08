@@ -1,1 +1,14 @@
 @import "../css/bundle.css";
+
+:host traders-banner>div {
+	text-align: center;
+}
+
+:host traders-banner>div>img {
+	height: var(--size-9);
+	margin: 5% auto auto;
+}
+
+:host traders-banner>div>h1 {
+	margin: var(--size--5) auto 5%;
+}

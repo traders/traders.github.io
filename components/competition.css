@@ -1,1 +1,68 @@
 @import "../css/bundle.css";
+
+:host traders-banner>div {
+	text-align: center;
+}
+
+:host traders-banner>div>img {
+	height: var(--size-9);
+	margin: 5% auto auto;
+}
+
+:host traders-banner>div>h1 {
+	margin: var(--size--5) auto 5%;
+}
+
+:host [name="stats"] {
+	display: flex;
+	flex-flow: row;
+	padding: var(--size-5) 0;
+
+	justify-content: center;
+}
+
+:host [name="stats"]>div {
+	display: flex;
+	flex-flow: column;
+	flex: 0 0 var(--size-14);
+	
+	text-align: center;
+	font-family: var(--font-title);
+}
+
+:host [name="stats"]>div>[name="number"] {
+	color: var(--accent-light-1);
+	font-size: var(--size-4);
+}
+
+:host [name="stats"]>div>[name="units"] {
+	font-size: var(--size-2);
+}
+
+:host [name="stack"]>h2 {
+	margin: var(--size--3) auto;
+
+	color: white;
+	text-align: center;
+}
+
+:host [name="stack"] {
+	display: flex;
+	flex-flow: column;
+}
+
+:host [name="stack"]>button[name="view"] {
+	margin: 0 auto var(--size--1);
+}
+
+:host [name="stack"]>p {
+	max-width: 70%;
+	margin: var(--size-5) auto var(--size--2);
+
+	text-align: center;
+}
+
+:host [name="stack"]>img {
+	max-width: 80%;
+	margin: var(--size-5) auto;
+}
