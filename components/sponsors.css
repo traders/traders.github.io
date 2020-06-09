@@ -12,3 +12,70 @@
 :host traders-banner>div>h1 {
 	margin: var(--size--5) auto 5%;
 }
+
+:host [name="main"] {
+	display: flex;
+	flex-flow: column;
+
+	color: black;
+	background-color: white;
+}
+
+:host [name="main"]>p {
+	max-width: 60%;
+	margin: var(--size-3) auto;
+
+	text-align: center;
+}
+
+:host [name="main"]>[name="diamond"],
+:host [name="main"]>[name="platinum"] {
+	display: flex;
+	flex-flow: row wrap;
+	padding: var(--size-0) 0;
+	max-width: 70%;
+	margin: auto;
+
+	justify-content: center;
+}
+
+:host [name="main"] img {
+	margin: var(--size-0);
+	max-width: 100%;
+}
+
+:host [name="diamond"] img {
+	height: var(--size-10);
+}
+
+:host [name="platinum"] img {
+	height: var(--size-7);
+}
+
+:host .text {
+	display: flex;
+	flex-flow: row wrap;
+	padding: var(--size-0) 20%;
+	justify-content: center;
+
+	width: 60%;
+}
+
+:host .text span {
+	padding: var(--size--2) var(--size-1);
+
+	font-family: var(--font-title);
+	font-size: var(--size-2);
+}
+
+:host [name="gold"] {
+	background: linear-gradient(270deg, #FFFFFF 0%, #F8ECAD 100%);
+}
+
+:host [name="silver"] {
+	background: linear-gradient(270deg, #FFFFFF 0%, #E0E0E0 100%);
+}
+
+:host [name="bronze"] {
+	background: linear-gradient(270deg, #FFFFFF 0%, #FFE6CC 100%);
+}

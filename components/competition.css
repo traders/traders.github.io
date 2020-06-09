@@ -24,7 +24,7 @@
 :host [name="stats"]>div {
 	display: flex;
 	flex-flow: column;
-	flex: 0 0 var(--size-14);
+	flex: 0 1 var(--size-14);
 	
 	text-align: center;
 	font-family: var(--font-title);
@@ -39,30 +39,50 @@
 	font-size: var(--size-2);
 }
 
-:host [name="stack"]>h2 {
+:host [name="main"]>h2 {
 	margin: var(--size--3) auto;
 
 	color: white;
 	text-align: center;
 }
 
-:host [name="stack"] {
+:host [name="main"]>h2[name="open"] {
+	display: none;
+}
+
+:host [name="main"][open]>h2[name="closed"] {
+	display: none;
+}
+
+:host [name="main"][open]>h2[name="open"] {
+	display: initial;
+}
+
+:host [name="main"] {
 	display: flex;
 	flex-flow: column;
 }
 
-:host [name="stack"]>button[name="view"] {
+:host [name="main"]>button[name="view"] {
 	margin: 0 auto var(--size--1);
 }
 
-:host [name="stack"]>p {
+:host [name="main"]>button[name="apply"] {
+	display: none;
+}
+
+:host [name="main"][open]>button[name="apply"] {
+	display: initial;
+}
+
+:host [name="main"]>p {
 	max-width: 70%;
 	margin: var(--size-5) auto var(--size--2);
 
 	text-align: center;
 }
 
-:host [name="stack"]>img {
+:host [name="main"]>img {
 	max-width: 80%;
 	margin: var(--size-5) auto;
 }
