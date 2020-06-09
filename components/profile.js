@@ -5,8 +5,17 @@ importWebElement(`profile`, class extends HTMLElement {
 		super();
 		setTimeout(() => {
 			// Ingest parameters.
-			this.shadowRoot.querySelector(`img`).src =
-				this.shadowRoot.host.getAttribute(`image`);
+			this.shadowRoot.querySelectorAll(`img`).forEach((element) => {
+				element.src = this.shadowRoot.host.getAttribute(`image`);
+			});
+
+			// Open profiles.
+			this.shadowRoot.querySelector(`img`).addEventListener(`click`, () => {
+				this.shadowRoot.host.setAttribute(`open`, ``);
+			});
+			this.shadowRoot.querySelector(`[name="modal"]`).addEventListener(`click`, () => {
+				this.shadowRoot.host.removeAttribute(`open`);
+			});
 		})
 	}
 });

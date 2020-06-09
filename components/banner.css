@@ -15,7 +15,7 @@
 }
 
 :host([blur])>div>.background {
-	filter: blur(var(--size--9)) brightness(50%);
+	filter: blur(var(--size--9)) brightness(30%);
 }
 
 :host>div>.content {

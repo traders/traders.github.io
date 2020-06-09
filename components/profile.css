@@ -26,3 +26,39 @@
 :host>div>* {
 	text-align: center;
 }
+
+:host [name="modal"] {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 1;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+
+	background-color: rgba(0, 0, 0, 0.9);
+	pointer-events: none;
+}
+
+:host([open]) [name="modal"] {
+	opacity: 1;
+
+	pointer-events: initial;
+	cursor: pointer;
+}
+
+:host([open]) [name="modal"]>div {
+	margin: auto;
+}
+
+:host([open]) [name="modal"]>div>* {
+	max-width: 70%;
+	padding: var(--size-0);
+}
+
+:host([open]) [name="modal"]>div>img {
+	width: var(--size-16);
+}
