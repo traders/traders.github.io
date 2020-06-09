@@ -40,7 +40,7 @@
 }
 
 :host [name="main"] img {
-	margin: var(--size-0);
+	margin: var(--size-2);
 	max-width: 100%;
 }
 

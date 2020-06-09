@@ -15,6 +15,9 @@ window.addEventListener(`load`, () => {
 			.classList.remove(`no-display`);
 		document.querySelector(`traders-menu`).updateSelection(name);
 		window.location.hash = `#${name}`;
+
+		// Clear scrolling
+		document.querySelector(`body>[name="main"]`).scrollTo(0, 0);
 	};
 
 	window.addEventListener(`traders-menu-update`, (event) => {

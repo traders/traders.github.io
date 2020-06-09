@@ -20,6 +20,10 @@ p {
 	font-family: var(--font-body);
 }
 
+i {
+	font-family: var(--font-body);
+}
+
 em {
 	color: var(--accent-light-1);
 	font-style: normal;
