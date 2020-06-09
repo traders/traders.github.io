@@ -69,13 +69,13 @@
 }
 
 :host [name="gold"] {
-	background: linear-gradient(270deg, #FFFFFF 0%, #F8ECAD 100%);
+	background: linear-gradient(270deg, #FFFFFF 0%, var(--highlight-gold) 100%);
 }
 
 :host [name="silver"] {
-	background: linear-gradient(270deg, #FFFFFF 0%, #E0E0E0 100%);
+	background: linear-gradient(270deg, #FFFFFF 0%, var(--highlight-silver) 100%);
 }
 
 :host [name="bronze"] {
-	background: linear-gradient(270deg, #FFFFFF 0%, #FFE6CC 100%);
+	background: linear-gradient(270deg, #FFFFFF 0%, var(--highlight-bronze) 100%);
 }

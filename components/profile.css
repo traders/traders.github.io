@@ -16,6 +16,7 @@
 	margin-bottom: var(--size-0);
 
 	border-radius: calc(var(--profile-img-size) / 2);
+	cursor: pointer;
 }
 
 :host([large])>div>img {

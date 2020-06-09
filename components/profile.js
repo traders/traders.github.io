@@ -4,7 +4,7 @@ importWebElement(`profile`, class extends HTMLElement {
 	constructor() {
 		super();
 		setTimeout(() => {
-			// Ingest profile picture.
+			// Ingest parameters.
 			this.shadowRoot.querySelector(`img`).src =
 				this.shadowRoot.host.getAttribute(`image`);
 		})

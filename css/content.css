@@ -16,6 +16,10 @@ h3 {
 	font-size: var(--size-2);
 }
 
+a {
+	color: var(--accent-light-1);
+}
+
 p {
 	font-family: var(--font-body);
 }
