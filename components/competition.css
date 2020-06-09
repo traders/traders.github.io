@@ -77,7 +77,7 @@
 	display: initial;
 }
 
-:host [name="main"] button+p {
+:host [name="main"] p[name="blurb"] {
 	max-width: 70%;
 	margin: var(--size-5) auto var(--size--2);
 }
