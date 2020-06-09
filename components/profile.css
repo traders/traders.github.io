@@ -1,16 +1,21 @@
 @import "../css/bundle.css";
 
 :host>div {
+	--profile-img-size: var(--size-12);
+
 	display: flex;
 	flex-flow: column;
 	padding: var(--size-2);
+	width: var(--profile-img-size);
 
 	font-family: var(--font-title);
 }
 
-:host>div>img {
-	--profile-img-size: var(--size-12);
+:host([large])>div {
+	--profile-img-size: var(--size-14);
+}
 
+:host>div>img {
 	width: var(--profile-img-size);
 	height: var(--profile-img-size);
 	margin-bottom: var(--size-0);
@@ -19,8 +24,8 @@
 	cursor: pointer;
 }
 
-:host([large])>div>img {
-	--profile-img-size: var(--size-14);
+:host>div>[name="name"] {
+	color: var(--accent-light-1);
 }
 
 :host>div>* {
