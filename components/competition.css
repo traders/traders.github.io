@@ -42,6 +42,11 @@
 	font-size: var(--size-2);
 }
 
+:host [name="main"] {
+	display: flex;
+	flex-flow: column;
+}
+
 :host [name="main"]>h2 {
 	margin: var(--size--3) auto;
 
@@ -60,24 +65,19 @@
 	display: initial;
 }
 
-:host [name="main"] {
-	display: flex;
-	flex-flow: column;
-}
-
-:host [name="main"]>button[name="view"] {
+:host [name="main"] button[name="view"] {
 	margin: 0 auto var(--size--1);
 }
 
-:host [name="main"]>button[name="apply"] {
+:host [name="main"] button[name="apply"] {
 	display: none;
 }
 
-:host [name="main"][open]>button[name="apply"] {
+:host [name="main"][open] button[name="apply"] {
 	display: initial;
 }
 
-:host [name="main"]>button+p {
+:host [name="main"] button+p {
 	max-width: 70%;
 	margin: var(--size-5) auto var(--size--2);
 }

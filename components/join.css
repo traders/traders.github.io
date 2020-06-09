@@ -18,27 +18,25 @@
 	flex-flow: column;
 
 	padding-bottom: var(--size-0);
+	text-align: center;
 }
 
 :host [name="main"]>p {
 	max-width: 60%;
 	margin: var(--size-3) auto;
-
-	text-align: center;
 }
 
-:host [name="main"]>button {
+:host [name="main"] button {
 	display: none;
-	margin-bottom: var(--size--2);
+	margin-bottom: var(--size-0);
 }
 
-:host [name="main"][open]>button {
+:host [name="main"][open] button {
 	display: initial;
 }
 
 :host [name="main"]>h2 {
 	color: white;
-	text-align: center;
 }
 
 :host [name="main"][open]>h2 {
@@ -52,6 +50,7 @@
 	margin: auto;
 
 	justify-content: left;
+	text-align: left;
 }
 
 :host [name="main"]>div>img {
