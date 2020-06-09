@@ -5,17 +5,23 @@ importWebElement(`profile`, class extends HTMLElement {
 		super();
 		setTimeout(() => {
 			// Ingest parameters.
+			const imageAttribute = this.shadowRoot.host.getAttribute(`image`);
 			this.shadowRoot.querySelectorAll(`img`).forEach((element) => {
-				element.src = this.shadowRoot.host.getAttribute(`image`);
+				element.src = imageAttribute || `./assets/profiles/default.png`;
+
+				// Make image green if it's the default.
+				if (!imageAttribute) {
+					element.style = `filter: invert(58%) sepia(23%) saturate(6270%) hue-rotate(118deg) brightness(95%) contrast(101%);`;
+				}
 			});
 
 			// Open profiles.
-			this.shadowRoot.querySelector(`img`).addEventListener(`click`, () => {
-				this.shadowRoot.host.setAttribute(`open`, ``);
-			});
-			this.shadowRoot.querySelector(`[name="modal"]`).addEventListener(`click`, () => {
-				this.shadowRoot.host.removeAttribute(`open`);
-			});
+			// this.shadowRoot.querySelector(`img`).addEventListener(`click`, () => {
+			// 	this.shadowRoot.host.setAttribute(`open`, ``);
+			// });
+			// this.shadowRoot.querySelector(`[name="modal"]`).addEventListener(`click`, () => {
+			// 	this.shadowRoot.host.removeAttribute(`open`);
+			// });
 		})
 	}
 });

@@ -1,5 +1,9 @@
 @import "../css/bundle.css";
 
+:host {
+	text-align: center;
+}
+
 :host traders-banner>div {
 	text-align: center;
 }
@@ -26,7 +30,6 @@
 	flex-flow: column;
 	flex: 0 1 var(--size-14);
 	
-	text-align: center;
 	font-family: var(--font-title);
 }
 
@@ -43,7 +46,6 @@
 	margin: var(--size--3) auto;
 
 	color: white;
-	text-align: center;
 }
 
 :host [name="main"]>h2[name="open"] {
@@ -75,17 +77,13 @@
 	display: initial;
 }
 
-:host [name="main"]>p {
+:host [name="main"]>button+p {
 	max-width: 70%;
 	margin: var(--size-5) auto var(--size--2);
-
-	text-align: center;
 }
 
 :host [name="main"]>h3 {
-	margin-top: var(--size-5);
-
-	text-align: center;
+	margin: var(--size-5) auto var(--size-1);
 }
 
 :host [name="gallery-wrapper"] {
