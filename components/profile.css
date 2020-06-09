@@ -57,10 +57,10 @@
 
 :host([open]) [name="modal"]>div {
 	margin: auto;
+	max-width: 70%;
 }
 
 :host([open]) [name="modal"]>div>* {
-	max-width: 70%;
 	padding: var(--size-0);
 }
 
