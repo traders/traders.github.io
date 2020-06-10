@@ -15,7 +15,7 @@ window.addEventListener(`load`, () => {
 });
 
 // This event is fired when all components and CSS pages have been loaded.
-window.addEventListener(`component-load`, () => {
+window.addEventListener(`fouc-load`, () => {
 	// Shorthand for selecting a menu item.
 	const selectMenuItem = (name) => {
 		document.querySelectorAll(`body>div>:not(traders-footer)`).forEach((element) => {

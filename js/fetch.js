@@ -43,6 +43,16 @@ export function importWebElement(name, CustomWebElement = class extends HTMLElem
 			component: 0
 		};
 	}
+	const checkFOUCLoad = () => {
+		if (importWebElement.pending.css === 0 &&
+			importWebElement.pending.component === 0) {
+			console.log(`Dispatching fouc-load.`);
+			document.dispatchEvent(
+				new CustomEvent(`fouc-load`, {
+					bubbles: true
+				}));
+		}
+	};
 
 	importWebElement.pending.component++;
 	console.log(`Pending ${JSON.stringify(importWebElement.pending)}.`);
@@ -66,13 +76,7 @@ export function importWebElement(name, CustomWebElement = class extends HTMLElem
 						element.addEventListener(`load`, () => {
 							importWebElement.pending.css--;
 							console.log(`Pending ${JSON.stringify(importWebElement.pending)}.`);
-
-							if (importWebElement.pending.css === 0 && importWebElement.pending.component === 0) {
-								this.dispatchEvent(
-									new CustomEvent(`component-load`, {
-										bubbles: true
-									}));
-							}
+							checkFOUCLoad();
 						});
 					});
 
@@ -87,5 +91,6 @@ export function importWebElement(name, CustomWebElement = class extends HTMLElem
 	}).then(() => {
 		importWebElement.pending.component--;
 		console.log(`Pending ${JSON.stringify(importWebElement.pending)}.`);
+		checkFOUCLoad();
 	});
 }
