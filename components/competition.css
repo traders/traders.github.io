@@ -65,6 +65,10 @@
 	display: initial;
 }
 
+:host [name="main"]>a {
+	margin: auto;
+}
+
 :host [name="main"] button[name="view"] {
 	margin: 0 auto var(--size--1);
 }

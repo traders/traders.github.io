@@ -26,6 +26,10 @@
 	margin: var(--size-3) auto;
 }
 
+:host [name="main"]>a {
+	margin: auto;
+}
+
 :host [name="main"] button {
 	display: none;
 	margin-bottom: var(--size-0);
