@@ -92,11 +92,12 @@
 
 :host [name="gallery-wrapper"] {
 	background-color: black;
+	height: 70vmin;
 }
 
 :host [name="gallery"] {
-	width: 85vmin;
-	height: 85vmin;
+	width: 90vmin;
+	height: 100%;
 	margin: auto;
 	display: flex;
 }

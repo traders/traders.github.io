@@ -7,17 +7,15 @@
 	<link rel="icon" type="image/png" href="assets/favicon.png"/>
 	<title>Traders@MIT</title>
 
-	<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+	<!-- For avoiding fonts FOUC. -->
+	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
 
 	<link rel="stylesheet" href="index.css">
 	<script type="module" src="index.js"></script>
 </head>
 
-<body>
-	<!--
-	<div style="background-color: red; text-align: center;">Under construction…</div>
-	-->
+<body class="loading">
+	<!-- <div style="background-color: red; text-align: center;">Under construction…</div> -->
 	<!-- Designed by Yang Yan. -->
 	<traders-menu></traders-menu>
 	<div name="main">
