@@ -37,15 +37,15 @@ export function fetch(opts) {
 // Shortcut for importing a web component. Creates a shadow root to compartmentalize CSS.
 export function importWebElement(name, CustomWebElement = class extends HTMLElement {}) {
 	// For avoiding FOUC.
-	if (importWebElement.pendingCssLoads === undefined) {
-		importWebElement.pendingCssLoads = 0;
-	}
-	if (importWebElement.pendingComponentLoads === undefined) {
-		importWebElement.pendingComponentLoads = 0;
+	if (importWebElement.pending === undefined) {
+		importWebElement.pending = {
+			css: 0,
+			component: 0
+		};
 	}
 
-	importWebElement.pendingComponentLoads++;
-	console.log(`Starting loading traders-${name}.`);
+	importWebElement.pending.component++;
+	console.log(`Pending ${JSON.stringify(importWebElement.pending)}.`);
 	return new Promise(function(resolve, reject) {
 		fetch({
 			url: `./components/${name}.html`,
@@ -60,14 +60,14 @@ export function importWebElement(name, CustomWebElement = class extends HTMLElem
 
 					// Trigger a global event when all component CSS pages have loaded.
 					const extLinks = this.shadowRoot.querySelectorAll(`link`);
-					importWebElement.pendingCssLoads += extLinks.length;
-					console.log(`Pending ${importWebElement.pendingCssLoads} CSS loads.`);
+					importWebElement.pending.css += extLinks.length;
+					console.log(`Pending ${JSON.stringify(importWebElement.pending)}.`);
 					extLinks.forEach((element) => {
 						element.addEventListener(`load`, () => {
-							console.log(`Pending ${--importWebElement.pendingCssLoads} CSS loads.`);
+							importWebElement.pending.css--;
+							console.log(`Pending ${JSON.stringify(importWebElement.pending)}.`);
 
-							if (importWebElement.pendingCssLoads === 0 &&
-								importWebElement.pendingComponentLoads === 0) {
+							if (importWebElement.pending.css === 0 && importWebElement.pending.component === 0) {
 								this.dispatchEvent(
 									new CustomEvent(`component-load`, {
 										bubbles: true
@@ -85,7 +85,7 @@ export function importWebElement(name, CustomWebElement = class extends HTMLElem
 			reject(xhr);
 		});
 	}).then(() => {
-		console.log(`Loaded traders-${name}.`);
-		importWebElement.pendingComponentLoads--;
+		importWebElement.pending.component--;
+		console.log(`Pending ${JSON.stringify(importWebElement.pending)}.`);
 	});
 }
