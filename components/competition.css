@@ -89,17 +89,13 @@
 :host [name="main"]>h3 {
 	margin: var(--size-5) auto var(--size-1);
 }
-
-:host [name="gallery-wrapper"] {
-	background-color: black;
-	height: 70vmin;
-}
-
 :host [name="gallery"] {
-	width: 90vmin;
-	height: 100%;
+	height: 80vh;
+	width: 100%;
 	margin: auto;
 	display: flex;
+
+	background-color: black;
 }
 
 :host [name="gallery"]>img {
