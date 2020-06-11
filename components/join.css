@@ -1,6 +1,8 @@
 @import "../css/bundle.css";
 
 :host traders-banner>div {
+	margin: auto;
+
 	text-align: center;
 }
 
@@ -70,7 +72,7 @@
 :host [name="main"]>div>div {
 	display: flex;
 	flex-flow: column;
-	
+
 	justify-content: center;
 }
 

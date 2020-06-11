@@ -20,6 +20,8 @@
 
 :host>div>.content {
 	position: relative;
+	display: flex;
+	min-height: var(--size-16);
 }
 
 :host([gradient])>div>.content {

@@ -1,6 +1,7 @@
 @import "../css/bundle.css";
 
 :host traders-banner[name="about"]>div {
+	margin: auto;
 	display: flex;
 	flex-flow: column;
 	height: 100%;
@@ -24,6 +25,7 @@
 }
 
 :host traders-banner:not([name="about"])>div {
+	margin: auto;
 	display: flex;
 	flex-flow: row;
 	padding: var(--size-4);

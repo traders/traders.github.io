@@ -5,6 +5,8 @@
 }
 
 :host traders-banner>div {
+	margin: auto;
+
 	text-align: center;
 }
 
@@ -29,7 +31,7 @@
 	display: flex;
 	flex-flow: column;
 	flex: 0 1 var(--size-14);
-	
+
 	font-family: var(--font-title);
 }
 
@@ -89,6 +91,7 @@
 :host [name="main"]>h3 {
 	margin: var(--size-5) auto var(--size-1);
 }
+
 :host [name="gallery"] {
 	height: 80vh;
 	width: 100%;
