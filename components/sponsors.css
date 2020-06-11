@@ -45,20 +45,21 @@
 }
 
 :host [name="diamond"] img {
-	height: var(--size-10);
+	max-height: var(--size-10);
 }
 
 :host [name="platinum"] img {
-	height: var(--size-7);
+	max-height: var(--size-7);
 }
 
 :host .text {
 	display: flex;
 	flex-flow: row wrap;
 	padding: var(--size-0) 20%;
-	justify-content: center;
-
 	width: 60%;
+
+	justify-content: center;
+	text-align: center;
 }
 
 :host .text span {

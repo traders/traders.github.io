@@ -7,12 +7,12 @@
 }
 
 :host traders-banner[name="about"]>div>img {
-	margin: 5% auto auto;
+	margin: 3% auto auto;
 	height: var(--size-9);
 }
 
 :host traders-banner[name="about"]>div>h3 {
-	margin: 20vw auto var(--size--4);
+	margin: 25vw auto var(--size--4);
 	max-width: 80%;
 	text-align: center;
 }
@@ -58,13 +58,12 @@
 
 :host div[name="board"]>div {
 	display: flex;
-	flex-flow: row;
+	flex-flow: row wrap;
 
 	justify-content: center;
 }
 
 :host div[name="board"]>div.general {
-	flex-wrap: wrap;
 	margin: auto;
 	max-width: var(--size-23);
 }

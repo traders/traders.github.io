@@ -15,7 +15,8 @@ body {
 	position: relative;
 	display: flex;
 	flex-flow: column;
-	min-width: var(--size-19);
+	min-width: var(--size-17);
+	overflow: hidden;
 
 	line-height: 1.5;
 	font-size: 1rem;
