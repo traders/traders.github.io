@@ -8,8 +8,18 @@ importWebElement(`competition`, class extends HTMLElement {
 			// Handler for photo gallery.
 			const galleryImg = this.shadowRoot.querySelector(`[name="gallery"]>img`);
 			const photos = [
+				`./assets/competition/big-room-stata.jpg`,
+				`./assets/competition/day-trading-for-dummies.jpg`,
+				`./assets/competition/first-place.jpg`,
+				`./assets/competition/lots-of-awards.jpg`,
+				`./assets/competition/one-person-pool.jpg`,
+				`./assets/competition/pool.jpg`,
+				`./assets/competition/presentation.jpg`,
+				`./assets/competition/sponsors.jpg`,
+				`./assets/competition/swapnil-avichal.jpg`,
+				`./assets/competition/talking.jpg`,
 				`./assets/competition/two-dudes.jpg`,
-				`./assets/competition/big-room-stata.jpg`
+				`./assets/competition/working.jpg`,
 			];
 			galleryImg.src = photos[0];
 			galleryImg.setAttribute(`idx`, `0`);
