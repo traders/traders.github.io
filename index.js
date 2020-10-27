@@ -4,6 +4,7 @@ import "./components/competition.js";
 import "./components/sponsors.js";
 import "./components/join.js";
 import "./components/footer.js";
+import "./components/schedule.js";
 
 window.addEventListener(`load`, () => {
 	// Load fonts synchronously.
