@@ -1,0 +1,82 @@
+@import "../css/bundle.css";
+
+:host traders-banner>div {
+	margin: auto;
+
+	text-align: center;
+}
+
+:host traders-banner>div>img {
+	height: var(--size-9);
+	margin: 5% auto auto;
+}
+
+:host traders-banner>div>h1 {
+	margin: var(--size--5) auto 5%;
+}
+
+:host [name="main"] {
+	display: flex;
+	flex-flow: column;
+
+	padding-bottom: var(--size-0);
+	text-align: center;
+}
+
+:host [name="main"]>p {
+	max-width: 60%;
+	margin: var(--size-3) auto;
+	text-align: left;
+}
+
+:host [name="main"]>a {
+	margin: auto;
+}
+
+:host [name="main"] button {
+	display: none;
+	margin-bottom: var(--size-0);
+}
+
+:host [name="main"][open] button {
+	display: initial;
+}
+
+:host [name="main"]>h2 {
+	color: white;
+}
+
+:host [name="main"][open]>h2 {
+	display: none;
+}
+
+:host [name="main"]>div {
+	display: flex;
+	flex-flow: row;
+	width: 70%;
+	margin: auto;
+
+	justify-content: left;
+	text-align: left;
+}
+
+:host [name="main"]>div>img {
+	--image-size: var(--size-10);
+
+	width: var(--image-size);
+	height: var(--image-size);
+	margin: auto var(--size-0);
+
+	border-radius: var(--image-size);
+}
+
+:host [name="main"]>div>div {
+	display: flex;
+	flex-flow: column;
+
+	justify-content: center;
+}
+
+:host [name="main"]>div>div>h3 {
+	margin: var(--size--1) 0 0;
+}
