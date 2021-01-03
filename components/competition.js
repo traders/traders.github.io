@@ -23,7 +23,7 @@ importWebElement(`competition`, class extends HTMLElement {
 			const intervalMs = 5000;
 			let hInterval;
 
-			this.shadowRoot.querySelector(`h3`).innerHTML += ` (${photos.length} photos)`;
+			// this.shadowRoot.querySelector(`h3`).innerHTML += ` (${photos.length} photos)`;
 
 			const incrementPhotoGallery = () => {
 				const curIdx = Number(galleryImg.getAttribute(`idx`));
