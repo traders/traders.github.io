@@ -1,6 +1,6 @@
 @import "../css/bundle.css";
 
-:host traders-banner>div {
+/*:host traders-banner>div {
 	margin: auto;
 
 	text-align: center;
@@ -31,7 +31,8 @@
 }
 
 :host [name="main"]>[name="diamond"],
-:host [name="main"]>[name="platinum"] {
+:host [name="main"]>[name="platinum"],
+:host [name="main"]>[name="gold"] {
 	display: flex;
 	flex-flow: row wrap;
 	padding: var(--size-0) 0;
@@ -54,6 +55,11 @@
 	max-height: var(--size-7);
 }
 
+
+:host [name="gold"] img {
+        max-height: var(--size-10);
+}
+
 :host .text {
 	display: flex;
 	flex-flow: row wrap;
@@ -71,6 +77,7 @@
 	font-size: var(--size-2);
 }
 
+
 :host [name="gold"] {
 	background: linear-gradient(270deg, #FFFFFF 0%, var(--highlight-gold) 100%);
 }
@@ -82,3 +89,4 @@
 :host [name="bronze"] {
 	background: linear-gradient(270deg, #FFFFFF 0%, var(--highlight-bronze) 100%);
 }
+*/
