@@ -33,14 +33,16 @@
 	margin: auto;
 }
 
+
 :host [name="main"] button {
-	display: none;
+	/*display: none;*/
 	margin-bottom: var(--size-0);
 }
 
 :host [name="main"][open] button {
 	display: initial;
 }
+
 
 :host [name="main"]>h2 {
 	color: white;
