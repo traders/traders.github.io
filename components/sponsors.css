@@ -60,6 +60,14 @@
         max-height: var(--size-10);
 }
 
+:host [name="silver"] img {
+        max-height: var(--size-7);
+}
+
+:host [name="bronze"] img {
+        max-height: var(--size-7);
+}
+
 :host .text {
 	display: flex;
 	flex-flow: row wrap;
