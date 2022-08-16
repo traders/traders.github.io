@@ -4,8 +4,10 @@
 
 	--accent-light-1: #00C173;
 	--accent-dark-1: #005633;
-
+	
+	--highlight-diamond: #B9F2FF;
+	--highlight-platinum: #E5E4E2;
 	--highlight-gold: #F8ECAD;
-	--highlight-silver: #E0E0E0;
+	--highlight-silver: #C9C9C9;
 	--highlight-bronze: #FFE6CC;
 }
