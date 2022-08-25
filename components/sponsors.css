@@ -30,6 +30,7 @@
 	text-align: center;
 }
 
+/*
 :host [name="main"]>[name="diamond"],
 :host [name="main"]>[name="platinum"],
 :host [name="main"]>[name="gold"] {
@@ -41,6 +42,7 @@
 
 	justify-content: center;
 }
+*/
 
 :host [name="main"] img {
 	margin: var(--size-2);
@@ -48,11 +50,11 @@
 }
 
 :host [name="diamond"] img {
-	max-height: var(--size-10);
+	max-height: var(--size-15);
 }
 
 :host [name="platinum"] img {
-	max-height: var(--size-7);
+	max-height: var(--size-12);
 }
 
 
@@ -61,11 +63,11 @@
 }
 
 :host [name="silver"] img {
-        max-height: var(--size-7);
+        max-height: var(--size-8);
 }
 
 :host [name="bronze"] img {
-        max-height: var(--size-7);
+        max-height: var(--size-8);
 }
 
 :host .text {
@@ -85,6 +87,15 @@
 	font-size: var(--size-2);
 }
 
+
+
+:host [name="diamond"] {
+	background: linear-gradient(270deg, #FFFFFF 0%, var(--highlight-diamond) 100%);
+}
+
+:host [name="platinum"] {
+	background: linear-gradient(270deg, #FFFFFF 0%, var(--highlight-platinum) 100%);
+}
 
 :host [name="gold"] {
 	background: linear-gradient(270deg, #FFFFFF 0%, var(--highlight-gold) 100%);
