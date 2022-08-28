@@ -50,24 +50,24 @@
 }
 
 :host [name="diamond"] img {
-	max-height: var(--size-15);
+	max-height: var(--size-12);
 }
 
 :host [name="platinum"] img {
-	max-height: var(--size-12);
+	max-height: var(--size-10);
 }
 
 
 :host [name="gold"] img {
-        max-height: var(--size-10);
+        max-height: var(--size-8);
 }
 
 :host [name="silver"] img {
-        max-height: var(--size-8);
+        max-height: var(--size-6);
 }
 
 :host [name="bronze"] img {
-        max-height: var(--size-8);
+        max-height: var(--size-6);
 }
 
 :host .text {
