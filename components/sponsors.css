@@ -50,7 +50,7 @@
 }
 
 :host [name="diamond"] img {
-	max-height: var(--size-12);
+	max-height: var(--size-11);
 }
 
 :host [name="platinum"] img {
