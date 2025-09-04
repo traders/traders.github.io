@@ -49,17 +49,22 @@
 	max-width: calc(100% - 2 * var(--size-2));
 }
 
+
 :host [name="diamond"] img {
 	max-height: var(--size-11);
 }
 
 :host [name="platinum"] img {
-	max-height: var(--size-10);
+	height: var(--size-10);
 }
 
 
 :host [name="gold"] img {
         max-height: var(--size-8);
+}
+
+:host [name="gold-silver-hybrid"] img {
+		max-height: var(--size-8);
 }
 
 :host [name="silver"] img {
@@ -99,6 +104,10 @@
 
 :host [name="gold"] {
 	background: linear-gradient(270deg, #FFFFFF 0%, var(--highlight-gold) 100%);
+}
+
+:host [name="gold-silver-hybrid"] {
+	background: linear-gradient(270deg, #f0f0f0 0%, #fff9df 100%);
 }
 
 :host [name="silver"] {
