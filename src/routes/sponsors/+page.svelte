@@ -55,6 +55,16 @@
 		borderHover: 'hover:border-amber-400/30',
 		padding: 'p-3 md:p-4'
 	},
+	goldsilver: {
+		badge: 'text-zinc-300 border-zinc-400/20 bg-amber-400/[0.03]',
+		badgeIcon: '◐',
+		logoSize: 'h-9 md:h-13',
+		grid: 'grid-cols-2 md:grid-cols-4',
+		lineColor: 'from-zinc-400/18',
+		accentColor: 'zinc-400',
+		borderHover: 'hover:border-zinc-400/28',
+		padding: 'p-3 md:p-4'
+	},
 	silver: {
 		badge: 'text-slate-300 border-slate-400/20 bg-slate-400/[0.04]',
 		badgeIcon: '○',
