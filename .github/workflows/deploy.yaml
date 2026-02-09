@@ -14,8 +14,8 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@v6
         with:
- node-version: 25.6.0
- cache: npm
+          node-version: 25.6.0
+          cache: npm
 
       - name: Install dependencies
         run: npm i
@@ -26,8 +26,8 @@ jobs:
       - name: Upload Artifacts
         uses: actions/upload-pages-artifact@v4
         with:
- # this should match the `pages` option in your adapter-static options
- path: 'build/'
+          # this should match the `pages` option in your adapter-static options
+          path: 'build/'
 
   deploy:
     needs: build_site
