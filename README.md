@@ -1,42 +1,95 @@
-# sv
+# Traders@MIT Website
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+The official website for **Traders@MIT**, MIT's undergraduate quantitative finance club. We host the annual intercollegiate trading competition and build a community around quantitative finance, trading, and technology.
 
-## Creating a project
+**Live site:** [traders.mit.edu](https://traders.mit.edu)
 
-If you're seeing this, you've probably already done this step. Congrats!
+## Tech Stack
+
+- **Framework:** [SvelteKit](https://kit.svelte.dev/) with [Svelte 5](https://svelte.dev/)
+- **Language:** TypeScript
+- **Styling:** [Tailwind CSS v4](https://tailwindcss.com/)
+- **UI Components:** [bits-ui](https://bits-ui.com/)
+- **Build:** [Vite](https://vitejs.dev/) with static adapter
+- **Deployment:** GitHub Pages via GitHub Actions
+
+## Getting Started
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (v20 or later recommended)
+- npm
+
+### Installation
 
 ```sh
-# create a new project
-npx sv create my-app
+git clone https://github.com/traders/traders.github.io.git
+cd traders.github.io
+npm install
 ```
 
-To recreate this project with the same configuration:
+### Development
 
-```sh
-# recreate this project
-npx sv create --template minimal --types ts --install npm .
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Start the local dev server:
 
 ```sh
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
 
-## Building
+The site will be available at `http://localhost:5173`. Changes are reflected instantly via HMR.
 
-To create a production version of your app:
+### Type Checking
+
+```sh
+npm run check
+```
+
+### Build
+
+Generate a production build:
 
 ```sh
 npm run build
 ```
 
-You can preview the production build with `npm run preview`.
+Preview the production build locally:
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+```sh
+npm run preview
+```
+
+## Project Structure
+
+```
+src/
+├── routes/              # SvelteKit pages
+│   ├── +layout.svelte   # Root layout (nav, footer)
+│   ├── +page.svelte     # Homepage
+│   ├── about/           # Team & mission
+│   ├── competition/     # Annual trading competition
+│   ├── sponsors/        # Sponsor tiers & logos
+│   └── join/            # Recruitment info
+├── lib/
+│   ├── assets/          # Images (logos, headshots, sponsors)
+│   ├── data/            # Members, sponsors, competition data
+├── app.css              # Global styles & Tailwind theme
+└── app.html             # HTML shell
+static/                  # Static files (CNAME, robots.txt)
+scripts/                 # Headshot processing utilities
+.github/workflows/       # CI/CD pipeline
+```
+
+## Deployment
+
+Deployment is fully automated. Pushing to `main` triggers the GitHub Actions workflow which builds the site and deploys it to GitHub Pages at [traders.mit.edu](https://traders.mit.edu).
+
+## Contributing
+
+1. Create a feature branch from `main`
+2. Make your changes
+3. Run `npm run check` to ensure there are no type errors
+4. Open a pull request
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
