@@ -2,7 +2,7 @@ export interface Sponsor {
 	name: string;
 	logo: string;
 	url: string;
-	tier: 'diamond' | 'platinum' | 'gold' | 'goldsilver' | 'silver';
+	tier: 'diamond' | 'platinum' | 'gold' | 'silver';
 }
 
 export const sponsors: Sponsor[] = [
@@ -21,21 +21,19 @@ export const sponsors: Sponsor[] = [
 	{ name: 'D.E. Shaw', logo: 'deshaw.png', url: 'https://www.deshaw.com/', tier: 'gold' },
 	{ name: 'Virtu', logo: 'virtu.png', url: 'https://www.virtu.com/', tier: 'gold' },
 	{ name: 'IMC Trading', logo: 'imc_trading.png', url: 'https://www.imc.com/', tier: 'gold' },
-	// Gold/Silver
-	{ name: 'Walleye Capital', logo: 'walleye.png', url: 'https://walleyecapital.com/', tier: 'goldsilver' },
-	{ name: 'Seven Research', logo: 'seven_research.svg', url: 'https://www.sevenresearch.com/', tier: 'goldsilver' },
-	{ name: 'Tower Research', logo: 'tower.png', url: 'https://tower-research.com/', tier: 'goldsilver' },
+	{ name: 'Walleye Capital', logo: 'walleye.png', url: 'https://walleyecapital.com/', tier: 'gold' },
+	{ name: 'Seven Research', logo: 'seven_research.svg', url: 'https://www.sevenresearch.com/', tier: 'gold' },
+	{ name: 'Tower Research', logo: 'tower.png', url: 'https://tower-research.com/', tier: 'gold' },
 	// Silver
 	{ name: 'Two Sigma', logo: 'two_sigma.png', url: 'https://www.twosigma.com/', tier: 'silver' }
 ];
 
-export const tiers = ['diamond', 'platinum', 'gold', 'goldsilver', 'silver'] as const;
+export const tiers = ['diamond', 'platinum', 'gold', 'silver'] as const;
 
 export const tierLabels: Record<(typeof tiers)[number], string> = {
 	diamond: 'Diamond',
 	platinum: 'Platinum',
 	gold: 'Gold',
-	goldsilver: 'Gold/Silver',
 	silver: 'Silver'
 };
 
