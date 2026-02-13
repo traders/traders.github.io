@@ -171,7 +171,7 @@
 					'Two-day event with cases designed by our board',
 					'Breakfast, lunch, and housing provided',
 					'Networking opportunities with sponsor firms',
-					'Compete individually or in teams'
+					'Compete individually'
 				] as item}
 					<li class="flex items-start gap-3">
 						<span class="mt-2 h-1 w-1 shrink-0 bg-green-electric rotate-45"></span>
