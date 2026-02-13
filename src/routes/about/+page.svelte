@@ -105,7 +105,7 @@
 				<span class="font-mono text-xs tracking-[0.25em] uppercase text-violet-accent/60 mb-4 block">02</span>
 				<h3 class="font-display text-xl md:text-2xl font-[700] text-zinc-50">Education</h3>
 				<p class="mt-4 text-sm leading-relaxed text-zinc-300 font-light">
-					During IAP and throughout the year, we hold internal seminars covering market
+					Throughout the year, we hold internal seminars covering market
 					microstructure, quantitative strategies, probability, and other topics in
 					quantitative finance. No prior trading experience is required.
 				</p>
@@ -118,8 +118,7 @@
 				<h3 class="font-display text-xl md:text-2xl font-[700] text-zinc-50">Industry Connections</h3>
 				<p class="mt-4 text-sm leading-relaxed text-zinc-300 font-light">
 					We work closely with industry-leading sponsors who provide mentorship,
-					networking opportunities, and career insights. Our members gain direct
-					access to top quantitative trading firms.
+					networking opportunities, and career insights.
 				</p>
 			</div>
 

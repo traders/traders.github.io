@@ -46,24 +46,27 @@
 	<div class="hero-grid absolute inset-0"></div>
 
 	<!-- Diagonal accent lines -->
-	<div
-		class="absolute top-[-20%] right-[38%] w-[1px] h-[160%] bg-gradient-to-b from-transparent via-green-electric/15 to-transparent origin-center"
-		style="transform: rotate(20deg);"
-	></div>
-	<div
-		class="absolute top-[-20%] right-[37.5%] w-[1px] h-[160%] bg-gradient-to-b from-transparent via-violet-accent/8 to-transparent origin-center"
-		style="transform: rotate(20deg);"
-	></div>
+		<!--<div
+			class="absolute top-[-20%] right-[38%] w-[1px] h-[160%] bg-gradient-to-b from-transparent via-green-electric/15 to-transparent origin-center"
+			style="transform: rotate(20deg);"
+		></div>
+		<div
+			class="absolute top-[-20%] right-[37.5%] w-[1px] h-[160%] bg-gradient-to-b from-transparent via-violet-accent/8 to-transparent origin-center"
+			style="transform: rotate(20deg);"
+		></div>
+	-->
 
 	<!-- Floating decorative elements -->
-	<div
-		class="absolute top-32 right-[12%] w-52 h-52 rounded-full border border-green-electric/[0.06] animate-float hidden md:block"
-	></div>
-	<div
-		class="absolute bottom-40 right-[22%] w-20 h-20 border border-violet-accent/[0.08] rotate-45 animate-float-delayed hidden md:block"
-	></div>
-	<div class="absolute top-[55%] left-[8%] w-3 h-3 bg-green-electric/20 rotate-45 hidden md:block"></div>
-	<div class="absolute top-[25%] right-[6%] w-2 h-2 bg-violet-accent/20 rounded-full hidden md:block"></div>
+	<!--
+		<div
+			class="absolute top-32 right-[12%] w-52 h-52 rounded-full border border-green-electric/[0.06] animate-float hidden md:block"
+		></div>
+		<div
+			class="absolute bottom-40 right-[22%] w-20 h-20 border border-violet-accent/[0.08] rotate-45 animate-float-delayed hidden md:block"
+		></div>
+		<div class="absolute top-[55%] left-[8%] w-3 h-3 bg-green-electric/20 rotate-45 hidden md:block"></div>
+		<div class="absolute top-[25%] right-[6%] w-2 h-2 bg-violet-accent/20 rounded-full hidden md:block"></div>
+	-->
 
 	<!-- Glow effects -->
 	<div class="absolute right-[-15%] top-[5%] h-[700px] w-[700px] rounded-full bg-green-electric/[0.04] blur-[180px]"></div>
@@ -291,7 +294,7 @@
 						Join Us
 					</h3>
 					<p class="mt-2 text-sm leading-relaxed text-zinc-400 font-light">
-						Join our executive board — design cases, build the exchange, and run the competition.
+						Join our executive board: design cases, build the exchange, and run the competition.
 					</p>
 				</a>
 			</div>

@@ -52,7 +52,7 @@
 			</div>
 			<h3 class="font-display text-2xl md:text-3xl font-[700] text-zinc-50">Fall 2025 Recruitment</h3>
 			<p class="mt-3 text-sm text-zinc-300 font-light">
-				Applications to join Traders@MIT have closed. Check back in Fall 2026.
+				Applications to join Traders@MIT have closed. Check back in Fall 2026!
 			</p>
 		</div>
 	</div>
@@ -100,7 +100,7 @@
 				<h3 class="font-display text-xl md:text-2xl font-[700] text-zinc-50">Develop the Exchange</h3>
 				<p class="mt-4 text-sm leading-relaxed text-zinc-300 font-light">
 					Build and maintain the trading exchange platform that powers
-					the competition, using real-world software engineering practices.
+					the competition.
 				</p>
 			</div>
 
@@ -117,7 +117,7 @@
 				</div>
 				<h3 class="font-display text-xl md:text-2xl font-[700] text-zinc-50">Coordinate Logistics</h3>
 				<p class="mt-4 text-sm leading-relaxed text-zinc-300 font-light">
-					Organize the competition weekend — from venue booking and catering to
+					Organize the competition weekend, from venue booking and catering to
 					competitor communication and sponsor coordination.
 				</p>
 			</div>
@@ -136,7 +136,7 @@
 				<h3 class="font-display text-xl md:text-2xl font-[700] text-zinc-50">Learn & Grow</h3>
 				<p class="mt-4 text-sm leading-relaxed text-zinc-300 font-light max-w-lg">
 					Participate in weekly seminars during IAP covering quantitative finance,
-					probability, and market microstructure — no experience required.
+					probability, and market microstructure. No experience required!
 				</p>
 			</div>
 		</div>
@@ -151,7 +151,7 @@
 			</h2>
 			<div class="mt-4 h-[2px] w-12 bg-violet-accent/40"></div>
 			<p class="mt-6 text-sm text-zinc-300 font-light max-w-xl">
-				Each fall, we host Traders Week — a series of events to introduce students to the club
+				Each fall, we host Traders Week, a series of events to introduce students to the club
 				and quantitative finance.
 			</p>
 		</div>
