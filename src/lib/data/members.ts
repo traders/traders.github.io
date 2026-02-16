@@ -9,7 +9,7 @@ export const members: Member[] = [
 	{ name: 'Michelle Kang', role: 'president', image: 'Michelle Kang.jpg' },
 	{ name: 'Alina Yang', role: 'board', image: 'Alina Yang.jpg' },
 	{ name: 'Alvin Tsai', role: 'board', image: 'Alvin Tsai.jpg' },
-	{ name: 'Ban Fan', role: 'board', image: 'Ban Fan.jpg' },
+	{ name: 'Ben Fan', role: 'board', image: 'Ben Fan.jpg' },
 	{ name: 'Catherine Li', role: 'board', image: 'Catherine Li.jpg' },
 	{ name: 'Claire Zheng', role: 'board', image: 'Claire Zheng.jpg' },
 	{ name: 'Daniel Xia', role: 'board', image: 'Daniel Xia.jpg' },
