@@ -24,6 +24,7 @@ export const sponsors: Sponsor[] = [
 	{ name: 'Walleye Capital', logo: 'walleye.png', url: 'https://walleyecapital.com/', tier: 'gold' },
 	{ name: 'Seven Research', logo: 'seven_research.svg', url: 'https://www.sevenresearch.com/', tier: 'gold' },
 	{ name: 'Tower Research', logo: 'tower.png', url: 'https://tower-research.com/', tier: 'gold' },
+	{ name: 'Freestone Grove Partners', logo: 'freestone_grove.svg', url: 'https://www.fgrovep.com/', tier: 'gold' },
 	// Silver
 	{ name: 'Two Sigma', logo: 'two_sigma.png', url: 'https://www.twosigma.com/', tier: 'silver' }
 ];
