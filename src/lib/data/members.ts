@@ -15,7 +15,7 @@ export const members: Member[] = [
 	{ name: 'Daniel Xia', role: 'board', image: 'Daniel Xia.jpg' },
 	{ name: 'Derek Chen', role: 'board', image: 'Derek Chen.jpg' },
 	{ name: 'Deven Pietrzak', role: 'board', image: 'Deven Pietrzak.jpg' },
-	{ name: 'Emily Yu', role: 'board', image: 'Emily Yu.jpg' },
+	{ name: 'Emily Yu', role: 'board', image: 'EmilyYu.png' },
 	{ name: 'Iliyas Noman', role: 'board', image: 'Iliyas Noman.jpg' },
 	{ name: 'Jason Youm', role: 'board', image: 'Jason Youm.jpg' },
 	{ name: 'Jessica Wan', role: 'board', image: 'Jessica Wan.jpg' },
