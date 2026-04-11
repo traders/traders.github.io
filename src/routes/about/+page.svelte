@@ -2,7 +2,7 @@
 	import { members } from '$lib/data/members';
 	import aboutImage from '$lib/assets/about.jpeg';
 
-	const profileImages = import.meta.glob('$lib/assets/profiles/*.jpg', {
+	const profileImages = import.meta.glob('$lib/assets/profiles/*.{jpg,png}', {
 		eager: true,
 		import: 'default'
 	}) as Record<string, string>;
