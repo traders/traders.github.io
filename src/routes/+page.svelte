@@ -64,15 +64,16 @@
 	<title>Traders@MIT — MIT's Premier Quantitative Finance Club</title>
 </svelte:head>
 
-<!-- Traders Week banner -->
+<!-- -mt-20 cancels layout main pt-20 so banner sits flush under fixed nav; sticky keeps it visible on scroll -->
 <section
-	class="relative z-20 border-b border-green-electric/20 bg-gradient-to-r from-green-electric/[0.08] via-[#050505] to-violet-accent/[0.06] pt-20"
+	class="sticky top-20 z-40 -mt-20 border-b border-green-electric/45 bg-gradient-to-r from-green-electric/20 via-green-electric/[0.07] to-violet-accent/15 shadow-[0_4px_28px_rgba(0,220,130,0.12)] backdrop-blur-md"
 	aria-label="Traders Week"
 >
 	<div class="mx-auto max-w-[90rem] px-6 md:px-12">
-		<div class="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 py-3.5 md:justify-between md:py-4">
-			<p class="text-center font-display text-sm font-[700] tracking-wide text-zinc-100 md:text-left md:text-base">
-				Join us during <span class="text-green-electric">Traders Week</span>
+		<div class="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 py-2.5 md:justify-between md:py-3">
+			<p class="text-center font-display text-sm font-[700] tracking-wide text-zinc-50 md:text-left md:text-base">
+				Join us during <span class="text-green-electric">Traders Week!</span>
+				<span class="text-zinc-200"> 09/14/26 (Mon) – 09/16/26 (Wed)</span>
 			</p>
 			<button
 				type="button"
@@ -95,7 +96,7 @@
 
 		{#if tradersWeekOpen}
 			<div
-				class="overflow-hidden border-t border-green-electric/15 pb-5 pt-4"
+				class="overflow-hidden border-t border-green-electric/30 bg-black/20 pb-5 pt-4"
 				transition:slide={{ duration: 350, easing: quintOut }}
 			>
 				<ul class="grid gap-4 md:grid-cols-3">
