@@ -46,13 +46,14 @@
 	<div class="fade-in-section mb-20 md:mb-28" use:fadeIn>
 		<div class="relative overflow-hidden border border-zinc-800/50 bg-zinc-900/20 p-10 md:p-14 text-center">
 			<div class="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-zinc-700/30 to-transparent"></div>
-			<div class="inline-flex items-center gap-2 rounded-full bg-zinc-800/50 px-4 py-1.5 mb-4">
-				<span class="h-2 w-2 rounded-full bg-zinc-600"></span>
-				<span class="font-mono text-xs tracking-[0.2em] uppercase text-zinc-500">Applications Closed</span>
+			<div class="inline-flex items-center gap-2 rounded-full bg-green-electric/10 px-4 py-1.5 mb-4">
+				<span class="h-2 w-2 rounded-full bg-green-electric"></span>
+				<span class="font-mono text-xs tracking-[0.2em] uppercase text-green-electric">Applications Opening Soon</span>
 			</div>
-			<h3 class="font-display text-2xl md:text-3xl font-[700] text-zinc-50">Fall 2025 Recruitment</h3>
+			<h3 class="font-display text-2xl md:text-3xl font-[700] text-zinc-50">Fall 2026 Recruitment</h3>
 			<p class="mt-3 text-sm text-zinc-300 font-light">
-				Applications to join Traders@MIT have closed. Check back in Fall 2026!
+				Join us during Traders Week to meet the club.
+				Applications to join Traders@MIT for Fall 2026 will open soon!
 			</p>
 		</div>
 	</div>
