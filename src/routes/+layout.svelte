@@ -1,5 +1,6 @@
 <script lang="ts">
 	import '../app.css';
+	import TradersWeekBanner from '$lib/components/TradersWeekBanner.svelte';
 	import { page } from '$app/stores';
 	import { slide } from 'svelte/transition';
 	import { quintOut } from 'svelte/easing';
@@ -115,6 +116,7 @@
 
 <!-- Main content -->
 <main class="min-h-screen pt-20">
+	<TradersWeekBanner />
 	{@render children()}
 </main>
 
