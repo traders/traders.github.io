@@ -165,9 +165,8 @@
 			<div class="space-y-4">
 				{#each [
 					{ num: '01', title: 'Intro to Traders & Q&A', desc: 'Learn about the club and ask questions', color: 'green-electric' },
-					{ num: '02', title: 'Poker Night', desc: 'Casual poker tournament and socializing', color: 'green-electric' },
-					{ num: '03', title: 'Estimathon', desc: 'Test your estimation skills in a fun competition', color: 'violet-accent' },
-					{ num: '04', title: 'Resume Review & Networking', desc: 'Get resume feedback and connect with members', color: 'amber-accent' }
+					{ num: '02', title: 'Grid Game', desc: 'Play a decision-making game and socialize', color: 'green-electric' },
+					{ num: '03', title: 'Estimathon', desc: 'Test your estimation skills in a fun competition', color: 'violet-accent' }
 				] as event}
 					<div class="group flex items-start gap-6 relative border border-zinc-800/50 bg-zinc-900/20 p-6 md:p-8 transition-all duration-500 hover:border-{event.color}/20 hover:bg-zinc-900/40">
 						<!-- Number badge -->
