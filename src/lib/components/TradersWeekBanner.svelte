@@ -34,7 +34,7 @@
 		<div class="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 py-2.5 md:justify-between md:py-3">
 			<p class="text-center font-display text-sm font-[700] tracking-wide text-zinc-50 md:text-left md:text-base">
 				Join us during <span class="text-green-electric">Traders Week!</span>
-				<span class="text-zinc-200"> 09/14/26 (Mon) – 09/16/26 (Wed)</span>
+				<span class="text-zinc-200"> Apply by Thursday 09/17 at 5pm ET.</span>
 			</p>
 			<button
 				type="button"
@@ -60,6 +60,16 @@
 				class="overflow-hidden border-t border-green-electric/30 bg-black/20 pb-5 pt-4"
 				transition:slide={{ duration: 350, easing: quintOut }}
 			>
+				<div class="mb-4 flex justify-center">
+					<a
+						href="https://forms.gle/WcZvFbsytme52pyH8"
+						target="_blank"
+						rel="noopener noreferrer"
+						class="inline-flex items-center justify-center bg-green-electric px-6 py-3 font-mono text-xs font-medium uppercase tracking-[0.15em] text-black transition-colors hover:bg-green-bright focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-green-electric"
+					>
+						Apply Now
+					</a>
+				</div>
 				<ul class="grid gap-4 md:grid-cols-3">
 					{#each tradersWeekEvents as event, i}
 						<li

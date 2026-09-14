@@ -48,13 +48,21 @@
 			<div class="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-zinc-700/30 to-transparent"></div>
 			<div class="inline-flex items-center gap-2 rounded-full bg-green-electric/10 px-4 py-1.5 mb-4">
 				<span class="h-2 w-2 rounded-full bg-green-electric"></span>
-				<span class="font-mono text-xs tracking-[0.2em] uppercase text-green-electric">Applications Opening Soon</span>
+				<span class="font-mono text-xs tracking-[0.2em] uppercase text-green-electric">Applications Open</span>
 			</div>
 			<h3 class="font-display text-2xl md:text-3xl font-[700] text-zinc-50">Fall 2026 Recruitment</h3>
 			<p class="mt-3 text-sm text-zinc-300 font-light">
 				Join us during Traders Week to meet the club.
-				Applications to join Traders@MIT for Fall 2026 will open soon!
+				Applications to join Traders@MIT for Fall 2026 are now open!
 			</p>
+			<a
+				href="https://forms.gle/WcZvFbsytme52pyH8"
+				target="_blank"
+				rel="noopener noreferrer"
+				class="mt-6 inline-flex items-center justify-center bg-green-electric px-8 py-3 font-mono text-sm font-medium uppercase tracking-[0.15em] text-black transition-colors hover:bg-green-bright focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-green-electric"
+			>
+				Apply Now
+			</a>
 		</div>
 	</div>
 
