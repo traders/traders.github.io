@@ -64,6 +64,16 @@
 		accentColor: 'slate-400',
 		borderHover: 'hover:border-slate-400/25',
 		padding: 'p-3 md:p-4'
+	},
+	bronze: {
+		badge: 'text-orange-300/90 border-orange-400/20 bg-orange-400/[0.05]',
+		badgeIcon: '▪',
+		logoSize: 'h-8 md:h-12',
+		grid: 'grid-cols-2 md:grid-cols-4',
+		lineColor: 'from-orange-400/15',
+		accentColor: 'orange-400',
+		borderHover: 'hover:border-orange-400/25',
+		padding: 'p-3 md:p-4'
 	}
 	};
 
