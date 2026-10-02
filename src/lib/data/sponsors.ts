@@ -3,6 +3,8 @@ export interface Sponsor {
 	logo: string;
 	url: string;
 	tier: 'diamond' | 'platinum' | 'gold' | 'silver' | 'bronze';
+	/** Use full card area for logos with extra canvas padding in the file */
+	logoFill?: boolean;
 }
 
 export const sponsors: Sponsor[] = [
@@ -21,7 +23,13 @@ export const sponsors: Sponsor[] = [
 	{ name: 'Old Mission Capital', logo: 'omc.png', url: 'https://www.oldmissioncapital.com/', tier: 'gold' },
 	{ name: 'D.E. Shaw', logo: 'deshaw.png', url: 'https://www.deshaw.com/', tier: 'gold' },
 	{ name: 'Walleye Capital', logo: 'walleye.png', url: 'https://walleyecapital.com/', tier: 'gold' },
-	{ name: 'Wintermute', logo: 'wintermute.png', url: 'https://www.wintermute.com/', tier: 'gold' },
+	{
+		name: 'Wintermute',
+		logo: 'wintermute.png',
+		url: 'https://www.wintermute.com/',
+		tier: 'gold',
+		logoFill: true
+	},
 	{ name: 'Virtu', logo: 'virtu.png', url: 'https://www.virtu.com/', tier: 'gold' },
 	{ name: 'IMC Trading', logo: 'imc_trading.png', url: 'https://www.imc.com/', tier: 'gold' },
 	{ name: 'Freestone Grove Partners', logo: 'freestone_grove.svg', url: 'https://www.fgrovep.com/', tier: 'gold' },
@@ -29,7 +37,13 @@ export const sponsors: Sponsor[] = [
 	{ name: 'Tower Research', logo: 'tower.png', url: 'https://tower-research.com/', tier: 'silver' },
 	// Bronze
 	{ name: 'Two Sigma', logo: 'two_sigma.png', url: 'https://www.twosigma.com/', tier: 'bronze' },
-	{ name: 'Sunrise Futures', logo: 'sunrise_futures.png', url: 'https://www.sunrisefutures.com/', tier: 'bronze' }
+	{
+		name: 'Sunrise Futures',
+		logo: 'sunrise_futures.png',
+		url: 'https://www.sunrisefutures.com/',
+		tier: 'bronze',
+		logoFill: true
+	}
 ];
 
 export const tiers = ['diamond', 'platinum', 'gold', 'silver', 'bronze'] as const;
