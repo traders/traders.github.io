@@ -12,15 +12,15 @@
 		return galleryImages[key] || '';
 	}
 
-	// ── Application deadline config ──────────────────────────────
-	const applicationDeadline = new Date('2026-02-01T23:59:59-05:00');
-	const competitionDates = 'April 25–26, 2026';
-	const competitionYear = 'Spring 2026';
+	// ── Competition & applications config ─────────────────────────
+	const competitionDates = 'Spring 2027 (dates TBA)';
+	const competitionYear = 'Spring 2027';
 	const applyLink = 'https://forms.gle/gBcBuDJfna9rvqUZ8';
 
-	const now = new Date();
-	const isApplicationOpen = now < applicationDeadline;
+	/** `not_yet_open` | `open` | `closed` */
+	const applicationStatus: 'not_yet_open' | 'open' | 'closed' = 'not_yet_open';
 
+	const applicationDeadline = new Date('2027-02-01T23:59:59-05:00');
 	const deadlineDisplay = applicationDeadline.toLocaleDateString('en-US', {
 		month: 'long',
 		day: 'numeric',
@@ -184,7 +184,7 @@
 
 	<!-- Application Status -->
 	<div class="fade-in-section mb-20 md:mb-28" use:fadeIn>
-		{#if isApplicationOpen}
+		{#if applicationStatus === 'open'}
 			<div class="relative overflow-hidden border border-green-electric/20 bg-green-electric/[0.03] p-10 md:p-14 text-center">
 				<div class="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-green-electric/40 to-transparent"></div>
 
@@ -207,6 +207,21 @@
 				>
 					Apply Now
 				</a>
+			</div>
+		{:else if applicationStatus === 'not_yet_open'}
+			<div class="relative overflow-hidden border border-amber-accent/20 bg-amber-accent/[0.03] p-10 md:p-14 text-center">
+				<div class="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-amber-accent/30 to-transparent"></div>
+				<div class="inline-flex items-center gap-2 rounded-full bg-amber-accent/10 px-4 py-1.5 mb-4">
+					<span class="h-2 w-2 rounded-full bg-amber-accent"></span>
+					<span class="font-mono text-xs tracking-[0.2em] uppercase text-amber-accent/90"
+						>Applications Not Yet Open</span
+					>
+				</div>
+				<h3 class="font-display text-2xl md:text-3xl font-[700] text-zinc-50">{competitionYear} Competition</h3>
+				<p class="mt-3 text-sm text-zinc-300 font-light max-w-xl mx-auto">
+					We&apos;re planning our {competitionYear} intercollegiate trading competition. Competitor
+					applications have not opened yet—check back here for updates.
+				</p>
 			</div>
 		{:else}
 			<div class="relative overflow-hidden border border-zinc-800/50 bg-zinc-900/20 p-10 md:p-14 text-center">
