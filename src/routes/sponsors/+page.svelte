@@ -64,6 +64,16 @@
 		accentColor: 'slate-400',
 		borderHover: 'hover:border-slate-400/25',
 		padding: 'p-3 md:p-4'
+	},
+	bronze: {
+		badge: 'text-orange-300/90 border-orange-400/20 bg-orange-400/[0.05]',
+		badgeIcon: '▪',
+		logoSize: 'h-8 md:h-12',
+		grid: 'grid-cols-2 md:grid-cols-4',
+		lineColor: 'from-orange-400/15',
+		accentColor: 'orange-400',
+		borderHover: 'hover:border-orange-400/25',
+		padding: 'p-3 md:p-4'
 	}
 	};
 
@@ -137,13 +147,17 @@
 								href={sponsor.url}
 								target="_blank"
 								rel="noopener noreferrer"
-								class="group flex items-center justify-center bg-white/95 {tierStyles[tier].padding} border border-zinc-200/10 transition-all duration-300 {tierStyles[tier].borderHover} hover:bg-white hover:shadow-lg hover:shadow-black/10 hover:-translate-y-0.5"
+								class="group flex items-center justify-center bg-white {tierStyles[tier].padding} border border-zinc-200/10 transition-all duration-300 {tierStyles[tier].borderHover} hover:bg-white hover:shadow-lg hover:shadow-black/10 hover:-translate-y-0.5 {sponsor.logoFill
+									? 'min-h-[4.5rem] md:min-h-[5.5rem]'
+									: ''}"
 								title={sponsor.name}
 							>
 								<img
 									src={getSponsorLogo(sponsor.logo)}
 									alt={sponsor.name}
-									class="{tierStyles[tier].logoSize} w-auto max-w-full object-contain transition-transform duration-300 group-hover:scale-105"
+									class="{sponsor.logoFill
+										? 'h-12 w-full max-w-full object-contain md:h-16'
+										: `${tierStyles[tier].logoSize} w-auto max-w-full object-contain`} transition-transform duration-300 group-hover:scale-105"
 								/>
 							</a>
 						{/each}
