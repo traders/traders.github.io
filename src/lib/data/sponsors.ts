@@ -21,7 +21,7 @@ export const sponsors: Sponsor[] = [
 	{ name: 'Old Mission Capital', logo: 'omc.png', url: 'https://www.oldmissioncapital.com/', tier: 'gold' },
 	{ name: 'D.E. Shaw', logo: 'deshaw.png', url: 'https://www.deshaw.com/', tier: 'gold' },
 	{ name: 'Walleye Capital', logo: 'walleye.png', url: 'https://walleyecapital.com/', tier: 'gold' },
-	{ name: 'Wintermute', logo: 'wintermute.svg', url: 'https://www.wintermute.com/', tier: 'gold' },
+	{ name: 'Wintermute', logo: 'wintermute.png', url: 'https://www.wintermute.com/', tier: 'gold' },
 	{ name: 'Virtu', logo: 'virtu.png', url: 'https://www.virtu.com/', tier: 'gold' },
 	{ name: 'IMC Trading', logo: 'imc_trading.png', url: 'https://www.imc.com/', tier: 'gold' },
 	{ name: 'Freestone Grove Partners', logo: 'freestone_grove.svg', url: 'https://www.fgrovep.com/', tier: 'gold' },
