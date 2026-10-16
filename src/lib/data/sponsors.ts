@@ -12,7 +12,6 @@ export const sponsors: Sponsor[] = [
 	{ name: 'Citadel', logo: 'citadel.png', url: 'https://citadel.com', tier: 'diamond' },
 	{ name: 'Jane Street', logo: 'janestreet.png', url: 'https://www.janestreet.com/', tier: 'diamond' },
 	{ name: 'Jump Trading', logo: 'jump.png', url: 'https://www.jumptrading.com/', tier: 'diamond' },
-	{ name: 'SIG', logo: 'sig.png', url: 'https://sig.com/', tier: 'diamond' },
 	// Platinum
 	{ name: 'Hudson River Trading', logo: 'hrt.png', url: 'https://www.hudsonrivertrading.com/', tier: 'platinum' },
 	{ name: 'Optiver', logo: 'optiver.svg', url: 'https://optiver.com/', tier: 'platinum' },
@@ -30,9 +29,6 @@ export const sponsors: Sponsor[] = [
 		tier: 'gold',
 		logoFill: true
 	},
-	{ name: 'Virtu', logo: 'virtu.png', url: 'https://www.virtu.com/', tier: 'gold' },
-	{ name: 'IMC Trading', logo: 'imc_trading.png', url: 'https://www.imc.com/', tier: 'gold' },
-	{ name: 'Freestone Grove Partners', logo: 'freestone_grove.svg', url: 'https://www.fgrovep.com/', tier: 'gold' },
 	// Silver
 	{ name: 'Tower Research', logo: 'tower.png', url: 'https://tower-research.com/', tier: 'silver' },
 	// Bronze
@@ -57,5 +53,7 @@ export const tierLabels: Record<(typeof tiers)[number], string> = {
 };
 
 export function getSponsorsByTier(tier: Sponsor['tier']): Sponsor[] {
-	return sponsors.filter((s) => s.tier === tier);
+	return sponsors
+		.filter((s) => s.tier === tier)
+		.sort((a, b) => a.name.localeCompare(b.name, 'en', { sensitivity: 'base', ignorePunctuation: true }));
 }

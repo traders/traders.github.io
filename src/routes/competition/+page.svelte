@@ -85,14 +85,14 @@
 		<span
 			class="absolute -top-4 -left-2 md:-top-10 md:-left-4 font-display text-[5rem] md:text-[9rem] lg:text-[12rem] font-[800] leading-none text-stroke text-zinc-800/[0.06] select-none pointer-events-none tracking-tighter"
 		>
-			18TH
+			19TH
 		</span>
 
 		<div class="relative pt-8 md:pt-14 grid md:grid-cols-12 gap-8 lg:gap-14 items-center">
 			<!-- Text content -->
 			<div class="md:col-span-6">
 				<div class="flex items-center gap-4 mb-5">
-					<span class="font-mono text-xs tracking-[0.25em] uppercase text-green-electric/70">18th Annual</span>
+					<span class="font-mono text-xs tracking-[0.25em] uppercase text-green-electric/70">19th Annual</span>
 					<div class="h-[1px] w-12 bg-green-electric/30"></div>
 				</div>
 				<h1 class="font-display text-5xl md:text-7xl lg:text-8xl font-[800] tracking-[-0.03em] text-zinc-50">

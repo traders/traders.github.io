@@ -29,7 +29,7 @@
 		badge: 'text-sky-300 border-sky-400/25 bg-sky-400/[0.06]',
 		badgeIcon: '◆',
 		logoSize: 'h-16 md:h-20',
-		grid: 'grid-cols-2 md:grid-cols-4',
+		grid: 'grid-cols-2',
 		lineColor: 'from-sky-400/30',
 		accentColor: 'sky-400',
 		borderHover: 'hover:border-sky-400/30',
@@ -59,7 +59,7 @@
 		badge: 'text-slate-300 border-slate-400/20 bg-slate-400/[0.04]',
 		badgeIcon: '○',
 		logoSize: 'h-8 md:h-12',
-		grid: 'grid-cols-2 md:grid-cols-5',
+		grid: 'grid-cols-2 md:grid-cols-4',
 		lineColor: 'from-slate-400/15',
 		accentColor: 'slate-400',
 		borderHover: 'hover:border-slate-400/25',
@@ -118,7 +118,7 @@
 				grateful for their continued support.
 			</p>
 			<p class="mt-3 font-mono text-xs tracking-[0.2em] uppercase text-zinc-500">
-				2025–2026 Season
+				2026-27 season
 			</p>
 		</div>
 	</div>

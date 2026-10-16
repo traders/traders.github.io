@@ -52,8 +52,8 @@
 			</div>
 			<h3 class="font-display text-2xl md:text-3xl font-[700] text-zinc-50">Board Recruitment</h3>
 			<p class="mt-3 text-sm text-zinc-300 font-light">
-				Applications to join Traders@MIT are currently closed. Check back in the fall for Traders Week
-				and next year&apos;s recruitment cycle.
+				Applications to join Traders@MIT are currently closed. Check back in fall 2027 for Traders Week
+				and our next recruitment cycle.
 			</p>
 		</div>
 	</div>
@@ -176,7 +176,7 @@
 						<div>
 							<h4 class="font-display text-base md:text-lg font-[700] text-zinc-100 transition-colors duration-300 group-hover:text-zinc-50">
 								{#if event.title === 'Estimathon'}
-									<a href="https://estimathon.com/" target="_blank" rel="noopener noreferrer" class="underline underline-offset-4 hover:text-green-electric">{event.title}</a>
+									<a href="https://estimathon.com/" target="_blank" rel="noopener noreferrer" class="italic underline underline-offset-4 hover:text-green-electric">{event.title}</a>
 								{:else}
 									{event.title}
 								{/if}
