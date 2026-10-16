@@ -175,7 +175,11 @@
 						</div>
 						<div>
 							<h4 class="font-display text-base md:text-lg font-[700] text-zinc-100 transition-colors duration-300 group-hover:text-zinc-50">
-								{event.title}
+								{#if event.title === 'Estimathon'}
+									<a href="https://estimathon.com/" target="_blank" rel="noopener noreferrer" class="underline underline-offset-4 hover:text-green-electric">{event.title}</a>
+								{:else}
+									{event.title}
+								{/if}
 							</h4>
 							<p class="mt-1 text-sm text-zinc-400 font-light">{event.desc}</p>
 						</div>
