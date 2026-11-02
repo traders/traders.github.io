@@ -30,7 +30,7 @@ export const sponsors: Sponsor[] = [
 		url: 'https://www.wintermute.com/',
 		tier: 'gold',
 		logoFill: true,
-		logoScale: 0.9
+		logoScale: 0.85
 	},
 	// Silver
 	{
