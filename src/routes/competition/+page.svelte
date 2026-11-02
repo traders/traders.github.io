@@ -4,6 +4,7 @@
 		competitionApplicationDeadline,
 		competitionApplicationStatus,
 		competitionApplyLink,
+		competitionEventDates,
 		competitionYear
 	} from '$lib/data/competitionApplications';
 	import competitionHero from '$lib/assets/competition.jpg';
@@ -18,7 +19,7 @@
 		return galleryImages[key] || '';
 	}
 
-	const competitionDates = `${competitionYear} (dates TBA)`;
+	const competitionDates = competitionEventDates;
 	const applicationStatus = competitionApplicationStatus;
 	const applyLink = competitionApplyLink;
 
