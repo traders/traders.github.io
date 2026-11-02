@@ -1,5 +1,11 @@
 <script lang="ts">
 	import { competitionImages } from '$lib/data/competition';
+	import {
+		competitionApplicationDeadline,
+		competitionApplicationStatus,
+		competitionApplyLink,
+		competitionYear
+	} from '$lib/data/competitionApplications';
 	import competitionHero from '$lib/assets/competition.jpg';
 
 	const galleryImages = import.meta.glob('$lib/assets/competition/*.jpg', {
@@ -12,16 +18,12 @@
 		return galleryImages[key] || '';
 	}
 
-	// ── Competition & applications config ─────────────────────────
-	const competitionDates = 'Spring 2027 (dates TBA)';
-	const competitionYear = 'Spring 2027';
-	const applyLink = 'https://forms.gle/gBcBuDJfna9rvqUZ8';
+	const competitionDates = `${competitionYear} (dates TBA)`;
+	const applicationStatus = competitionApplicationStatus;
+	const applyLink = competitionApplyLink;
 
-	/** `not_yet_open` | `open` | `closed` */
-	const applicationStatus: 'not_yet_open' | 'open' | 'closed' = 'not_yet_open';
-
-	const applicationDeadline = new Date('2027-02-01T23:59:59-05:00');
-	const deadlineDisplay = applicationDeadline.toLocaleDateString('en-US', {
+	const deadlineDisplay = competitionApplicationDeadline.toLocaleDateString('en-US', {
+		weekday: 'long',
 		month: 'long',
 		day: 'numeric',
 		year: 'numeric',
@@ -151,7 +153,7 @@
 				<div class="h-[1px] bg-zinc-800/50"></div>
 				<div class="flex items-start gap-6">
 					<dt class="font-mono text-xs tracking-[0.2em] uppercase text-zinc-500 w-24 shrink-0 pt-0.5">Format</dt>
-					<dd class="text-sm text-zinc-200">Two trading cases released during the competition</dd>
+					<dd class="text-sm text-zinc-200">Trading cases released during the competition</dd>
 				</div>
 				<div class="h-[1px] bg-zinc-800/50"></div>
 				<div class="flex items-start gap-6">
