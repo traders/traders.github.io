@@ -95,7 +95,7 @@
 				<p class="mt-4 text-sm leading-relaxed text-zinc-300 font-light max-w-lg">
 					Each spring, we organize a two-day trading competition that brings together ~120
 					students from MIT, Harvard, Princeton, Stanford, CMU, and other top universities.
-					Competitors solve two trading cases for $20,000+ in prizes.
+					Competitors solve trading cases for $20,000+ in prizes.
 				</p>
 			</div>
 

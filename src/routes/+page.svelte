@@ -1,6 +1,7 @@
 <script lang="ts">
 	import groupPhoto from '$lib/assets/group.jpg';
 	import { sponsors } from '$lib/data/sponsors';
+	import CompetitionApplyBanner from '$lib/components/CompetitionApplyBanner.svelte';
 
 	// Dynamic imports for sponsor logos (for ticker)
 	const sponsorLogos = import.meta.glob('$lib/assets/sponsors/*.{png,svg,jpg}', {
@@ -38,6 +39,8 @@
 <svelte:head>
 	<title>Traders@MIT — MIT's Premier Quantitative Finance Club</title>
 </svelte:head>
+
+<CompetitionApplyBanner />
 
 <!-- Hero Section -->
 <section class="relative min-h-[100vh] overflow-hidden flex items-center">
