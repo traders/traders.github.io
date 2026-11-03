@@ -5,6 +5,8 @@ export interface Sponsor {
 	tier: 'diamond' | 'platinum' | 'gold' | 'silver' | 'bronze';
 	/** Use full card area for logos with extra canvas padding in the file */
 	logoFill?: boolean;
+	/** Scale logo within its tile (e.g. 0.9 = 10% smaller) */
+	logoScale?: number;
 }
 
 export const sponsors: Sponsor[] = [
@@ -27,9 +29,16 @@ export const sponsors: Sponsor[] = [
 		logo: 'wintermute.png',
 		url: 'https://www.wintermute.com/',
 		tier: 'gold',
-		logoFill: true
+		logoFill: true,
+		logoScale: 0.85
 	},
 	// Silver
+	{
+		name: 'Freestone Grove',
+		logo: 'freestone_grove.svg',
+		url: 'https://fgrovep.com/',
+		tier: 'silver'
+	},
 	{ name: 'Tower Research', logo: 'tower.png', url: 'https://tower-research.com/', tier: 'silver' },
 	// Bronze
 	{ name: 'Two Sigma', logo: 'two_sigma.png', url: 'https://www.twosigma.com/', tier: 'bronze' },

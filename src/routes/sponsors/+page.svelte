@@ -152,13 +152,20 @@
 									: ''}"
 								title={sponsor.name}
 							>
-								<img
-									src={getSponsorLogo(sponsor.logo)}
-									alt={sponsor.name}
-									class="{sponsor.logoFill
-										? 'h-12 w-full max-w-full object-contain md:h-16'
-										: `${tierStyles[tier].logoSize} w-auto max-w-full object-contain`} transition-transform duration-300 group-hover:scale-105"
-								/>
+								<div
+									class="flex max-w-full items-center justify-center transition-transform duration-300 group-hover:scale-105"
+									style={sponsor.logoScale != null
+										? `transform: scale(${sponsor.logoScale})`
+										: undefined}
+								>
+									<img
+										src={getSponsorLogo(sponsor.logo)}
+										alt={sponsor.name}
+										class="{sponsor.logoFill
+											? 'h-12 w-full max-w-full object-contain md:h-16'
+											: `${tierStyles[tier].logoSize} w-auto max-w-full object-contain`}"
+									/>
+								</div>
 							</a>
 						{/each}
 					</div>
