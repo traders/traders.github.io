@@ -8,7 +8,7 @@
 
 {#if competitionApplicationStatus === 'open'}
 <section
-	class="relative z-20 border-b border-green-electric/30 bg-gradient-to-r from-green-electric/15 via-green-electric/[0.06] to-violet-accent/10"
+	class="sticky top-20 z-40 border-b border-green-electric/30 bg-gradient-to-r from-green-electric/15 via-green-electric/[0.06] to-violet-accent/10 backdrop-blur-md supports-[backdrop-filter]:bg-[#050505]/75"
 	aria-label="Competition applications"
 >
 	<div class="mx-auto flex max-w-[90rem] flex-wrap items-center justify-center gap-x-3 gap-y-2 px-6 py-3 text-center md:justify-between md:px-12 md:py-3.5">

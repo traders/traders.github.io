@@ -5,6 +5,7 @@
 	import { quintOut } from 'svelte/easing';
 	import logo from '$lib/assets/logo.png';
 	import favicon from '$lib/assets/favicon.png';
+	import CompetitionApplyBanner from '$lib/components/CompetitionApplyBanner.svelte';
 
 	let { children } = $props();
 
@@ -115,6 +116,7 @@
 
 <!-- Main content -->
 <main class="min-h-screen pt-20">
+	<CompetitionApplyBanner />
 	{@render children()}
 </main>
 
