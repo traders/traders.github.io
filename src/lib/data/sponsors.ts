@@ -41,6 +41,7 @@ export const sponsors: Sponsor[] = [
 	},
 	{ name: 'Tower Research', logo: 'tower.png', url: 'https://tower-research.com/', tier: 'silver' },
 	// Bronze
+	{ name: 'Ansatz Trading', logo: 'ansatz.png', url: 'https://ansatz.capital/', tier: 'bronze' },
 	{ name: 'Two Sigma', logo: 'two_sigma.png', url: 'https://www.twosigma.com/', tier: 'bronze' },
 	{
 		name: 'Sunrise Futures',
